@@ -20,10 +20,9 @@
             };
             $.connection.hub.start().done(function () {
                 $('#startButton').click(function () {
-                    // Disable the start button
+
                     $('#startButton').prop('disabled', true);
 
-                    // Disable the select elements
                     $('#from-currency').prop('disabled', true);
                     $('#to-currency').prop('disabled', true);
 
@@ -42,15 +41,14 @@
                             console.log(xhr.responseText);
                         }
                     });
-                    /*currencyQuoteHub.server.start(fromCurrency, toCurrency);*/
                 });
                 $('#stopButton').click(function () {
-                    // Enable the start button
+
                     $('#startButton').prop('disabled', false);
 
-                    // Enable the select elements
                     $('#from-currency').prop('disabled', false);
                     $('#to-currency').prop('disabled', false);
+
                     $.ajax({
                         type: 'POST',
                         url: '/api/CurrencyQuotes/Stop',

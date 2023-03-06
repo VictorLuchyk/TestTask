@@ -34,7 +34,7 @@ namespace TestTask.Services
         }
 
 
-        public void StartTimer(OuoteModel ouoteModel)
+        public void StartTimer(QuoteModel ouoteModel)
         {
             _fromCurrency = ouoteModel.From;
             _toCurrency = ouoteModel.To;

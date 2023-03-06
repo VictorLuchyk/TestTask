@@ -21,10 +21,11 @@ namespace TestTask.Controllers
         public CurrencyQuotesController()
         {
             _currencyQuoteService = GlobalHost.DependencyResolver.Resolve<CurrencyQuoteService>();
+
         }
 
         [HttpPost]
-        public IHttpActionResult Start(OuoteModel ouoteModel)
+        public IHttpActionResult Start(QuoteModel ouoteModel)
         {
             _currencyQuoteService.StartTimer(ouoteModel);
             return Ok();
@@ -46,7 +47,7 @@ namespace TestTask.Controllers
         }
 
         [HttpPost]
-        public async Task<CurrencyQuoteDto> GetQuotes(OuoteModel ouoteModel)
+        public async Task<CurrencyQuoteDto> GetQuotes(QuoteModel ouoteModel)
         {
             var currencyQuote = await _currencyQuoteService.GetCurrencyQuote(ouoteModel.From, ouoteModel.To);
             var currencyQuoteDto = CurrencyQuoteDto.FromQuote(currencyQuote);

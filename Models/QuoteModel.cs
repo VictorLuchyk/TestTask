@@ -5,7 +5,7 @@ using System.Web;
 
 namespace TestTask.Models
 {
-    public class OuoteModel
+    public class QuoteModel
     {
         public string From { get; set; }
 

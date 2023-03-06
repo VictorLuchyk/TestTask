@@ -235,7 +235,7 @@
     <Compile Include="Hubs\CurrencyQuoteHub.cs" />
     <Compile Include="Models\CurrencyQuote.cs" />
     <Compile Include="Models\CurrencyQuoteDto.cs" />
-    <Compile Include="Models\OuoteModel.cs" />
+    <Compile Include="Models\QuoteModel.cs" />
     <Compile Include="Models\RealtimeCurrencyExchangeRate.cs" />
     <Compile Include="Models\RealtimeCurrencyExchangeRateDto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -251,7 +251,6 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Indexc.html" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\HelpPage\Views\Web.config" />
@@ -273,7 +272,6 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
-    <Content Include="json.json" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -301,8 +299,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\CurrencyQuotesController\" />
-    <Folder Include="Views\CurrencyQuotes\" />
-    <Folder Include="Views\CurrencyQuote\" />
     <Folder Include="Views\Default\" />
   </ItemGroup>
   <ItemGroup>

@@ -20,8 +20,6 @@ namespace TestTask
         {
 
             GlobalHost.DependencyResolver.Register(typeof(CurrencyQuoteService), () => CurrencyQuoteServiceFactory.Instance);
-            GlobalHost.DependencyResolver.Register(typeof(CurrencyQuoteHub), () => new CurrencyQuoteHub());
-           // GlobalHost.DependencyResolver.Register(typeof(CurrencyQuoteHub), () => new CurrencyQuoteHub(GlobalHost.DependencyResolver.Resolve<CurrencyQuoteService>()));
 
             app.MapSignalR();
         }

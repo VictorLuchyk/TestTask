@@ -14,11 +14,6 @@ namespace TestTask
         {
             // Web API configuration and services
 
-
-
-            //var currencyQuoteService = new CurrencyQuoteService();
-            //config.DependencyResolver.RegisterSingleton<IQuotesService>(quotesService);
-            // config.Services.AddSingleton<CurrencyQuoteService>();
             // Web API routes
             config.MapHttpAttributeRoutes();
 
